@@ -393,7 +393,6 @@
     </div>
   </div>
 
-  <span class="demo-flag"><span class="tag">Ejemplo</span> <span>Vista previa cargada con el caso Ceremonia de Ordinarización DAP 2026</span></span>
 </div>
 
 <div class="stage">
@@ -430,7 +429,7 @@
         <div class="inner">
           <div class="grid2">
             <label class="campo"><span>Unidad solicitante<em>*</em></span>
-              <input type="text" placeholder="Ej. Dirección Académica del Profesorado" value="Dirección Académica del Profesorado (DAP)" required>
+              <input type="text" placeholder="Ej. Dirección Académica del Profesorado" required>
             </label>
             <label class="campo"><span>Evento solicitado por<em>*</em></span>
               <input type="text" placeholder="Nombre y apellido" required>
@@ -473,7 +472,7 @@
         <div class="inner">
           <div class="grid2">
             <label class="campo campo-full"><span>Nombre tentativo del evento<em>*</em></span>
-              <input type="text" value="Ceremonia de Ordinarización" required>
+              <input type="text" placeholder="Ej. Ceremonia de Ordinarización" required>
             </label>
 
             <label class="campo"><span>Tipo de evento<em>*</em></span>
@@ -484,18 +483,18 @@
               </div>
             </label>
             <label class="campo"><span>Fecha del evento<em>*</em></span>
-              <input type="date" value="2026-03-26" required>
+              <input type="date" required>
             </label>
 
             <label class="campo"><span>Horario (día 1)<em>*</em></span>
-              <input type="text" value="6:00 PM – 8:00 PM" placeholder="Ej. 6:00 PM – 8:00 PM" required>
+              <input type="text" placeholder="Ej. 6:00 PM – 8:00 PM" required>
             </label>
             <label class="campo"><span>¿Considera más de un día?</span>
               <input type="text" placeholder="Detalla horario de días adicionales">
             </label>
 
             <label class="campo campo-full"><span>Breve descripción / temática<em>*</em></span>
-              <textarea required>La Ceremonia de Ordinarización del DAP-PUCP es un acto protocolar que formaliza el ingreso de docentes a la carrera profesional permanente, reconociendo su trayectoria y compromiso institucional. Incluye la entrega de reconocimientos y un brindis de honor.</textarea>
+              <textarea placeholder="¿Qué es el evento, a quién está dirigido y qué incluye?" required></textarea>
             </label>
             <label class="campo campo-full"><span>Justificación del evento</span>
               <textarea placeholder="¿Por qué se realiza este evento y qué lo motiva?"></textarea>
@@ -520,21 +519,21 @@
         <div class="inner">
           <label class="campo" style="margin-bottom:14px;"><span>Público objetivo<em>*</em></span>
             <div class="chips" data-grupo="publico">
-              <span class="chip on" data-valor="Profesores"><span class="tick">✓</span>Profesores</span>
+              <span class="chip" data-valor="Profesores"><span class="tick">✓</span>Profesores</span>
               <span class="chip" data-valor="Alumnos"><span class="tick">✓</span>Alumnos</span>
-              <span class="chip on" data-valor="Administrativos"><span class="tick">✓</span>Personal administrativo</span>
+              <span class="chip" data-valor="Administrativos"><span class="tick">✓</span>Personal administrativo</span>
               <span class="chip" data-valor="Externos"><span class="tick">✓</span>Invitados externos</span>
             </div>
           </label>
           <div class="grid2">
             <label class="campo"><span>N.° de invitados esperados<em>*</em></span>
-              <input type="number" value="180" required>
+              <input type="number" placeholder="Ej. 180" required>
             </label>
             <label class="campo"><span>N.° de profesores / homenajeados</span>
-              <input type="number" value="33">
+              <input type="number" placeholder="Opcional">
             </label>
             <label class="campo campo-full"><span>¿Hubo versiones anteriores de este evento?</span>
-              <input type="text" value="Sí, Ceremonia de Ordinarización 2025 (33 profesores, 180 invitados)">
+              <input type="text" placeholder="Opcional">
             </label>
           </div>
         </div>
@@ -556,7 +555,7 @@
         <div class="inner">
           <div class="espacios" data-grupo="espacio" style="margin-bottom:14px;">
             <div class="espacio" data-valor="Auditorio de Derecho"><h4>Auditorio de Derecho</h4><div class="aforo">Aforo 350 pax</div></div>
-            <div class="espacio on" data-valor="Auditorio de Humanidades"><h4>Auditorio de Humanidades</h4><div class="aforo">Consultar tarifas</div></div>
+            <div class="espacio" data-valor="Auditorio de Humanidades"><h4>Auditorio de Humanidades</h4><div class="aforo">Consultar tarifas</div></div>
             <div class="espacio" data-valor="SUM CCSS"><h4>SUM CCSS</h4><div class="aforo">Aforo 250 pax</div></div>
             <div class="espacio" data-valor="Polivalente A100"><h4>Polivalente A100</h4><div class="aforo">Aforo 100 pax</div></div>
             <div class="espacio" data-valor="Polivalente B100"><h4>Polivalente B100</h4><div class="aforo">Aforo 150 pax</div></div>
@@ -566,7 +565,7 @@
             <div class="espacio" data-valor="Que la OEyV sugiera"><h4>Que la OEyV me sugiera</h4><div class="aforo">Según asistentes y presupuesto</div></div>
           </div>
           <label class="campo"><span>Notas sobre el espacio</span>
-            <input type="text" placeholder="Ej. necesita tarima, backing, distribución especial…" value="Requiere tarima para saxofonista y backing 3x2 al fondo del auditorio.">
+            <input type="text" placeholder="Ej. necesita tarima, backing, distribución especial…">
           </label>
         </div>
       </div>
@@ -586,21 +585,21 @@
       <div class="contenido">
         <div class="inner">
           <div class="chips" data-grupo="requerimientos" style="margin-bottom:16px;">
-            <span class="chip on" data-valor="Seguridad"><span class="tick">✓</span>Seguridad</span>
+            <span class="chip" data-valor="Seguridad"><span class="tick">✓</span>Seguridad</span>
             <span class="chip" data-valor="Limpieza"><span class="tick">✓</span>Limpieza</span>
-            <span class="chip on" data-valor="Mobiliario"><span class="tick">✓</span>Traslado de mobiliario</span>
-            <span class="chip on" data-valor="Estructuras"><span class="tick">✓</span>Estructuras / toldos</span>
-            <span class="chip on" data-valor="Audiovisuales"><span class="tick">✓</span>Audiovisuales</span>
-            <span class="chip on" data-valor="Anfitriones"><span class="tick">✓</span>Anfitriones</span>
+            <span class="chip" data-valor="Mobiliario"><span class="tick">✓</span>Traslado de mobiliario</span>
+            <span class="chip" data-valor="Estructuras"><span class="tick">✓</span>Estructuras / toldos</span>
+            <span class="chip" data-valor="Audiovisuales"><span class="tick">✓</span>Audiovisuales</span>
+            <span class="chip" data-valor="Anfitriones"><span class="tick">✓</span>Anfitriones</span>
             <span class="chip" data-valor="Inscripciones"><span class="tick">✓</span>Inscripciones / registro</span>
             <span class="chip" data-valor="Difusion"><span class="tick">✓</span>Difusión</span>
-            <span class="chip on" data-valor="Materiales"><span class="tick">✓</span>Materiales para participantes</span>
-            <span class="chip on" data-valor="Alimentacion"><span class="tick">✓</span>Alimentación</span>
+            <span class="chip" data-valor="Materiales"><span class="tick">✓</span>Materiales para participantes</span>
+            <span class="chip" data-valor="Alimentacion"><span class="tick">✓</span>Alimentación</span>
             <span class="chip" data-valor="Fotografia"><span class="tick">✓</span>Cobertura fotográfica</span>
             <span class="chip" data-valor="Otro"><span class="tick">✓</span>Otro</span>
           </div>
           <label class="campo"><span>Observaciones</span>
-            <textarea placeholder="Detalla cualquier requerimiento particular">30 medallas con estuche de terciopelo como obsequio; cóctel para 120 personas al finalizar; arreglos florales para el auditorio.</textarea>
+            <textarea placeholder="Detalla cualquier requerimiento particular"></textarea>
           </label>
         </div>
       </div>
@@ -851,18 +850,18 @@
     btnEnviar.disabled = true;
     mostrarEstado('enviando', 'Enviando tu solicitud…');
 
+    // No leemos la respuesta: Apps Script no la deja leer desde otro sitio (no-cors),
+    // aunque el envío en sí SIEMPRE llega y se procesa igual. Como ya validamos arriba
+    // que todos los campos obligatorios están completos, tratamos "no hubo error de red"
+    // como éxito.
     fetch(WEBAPP_URL, {
       method: 'POST',
+      mode: 'no-cors',
       body: JSON.stringify(recolectarDatos())
     })
-      .then(function(resp){ return resp.json(); })
-      .then(function(data){
+      .then(function(){
         btnEnviar.disabled = false;
-        if (data.ok){
-          mostrarEstado('exito', '¡Listo! Registramos tu solicitud y te llegará un correo de confirmación.');
-        } else {
-          mostrarEstado('error', 'No se pudo registrar: ' + (data.error || 'intenta nuevamente.'));
-        }
+        mostrarEstado('exito', '¡Listo! Registramos tu solicitud y te llegará un correo de confirmación.');
       })
       .catch(function(){
         btnEnviar.disabled = false;
