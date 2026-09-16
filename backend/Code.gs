@@ -139,9 +139,17 @@ function respuestaJSON(obj) {
 // ====================== GUARDADO ======================
 
 function guardarEnSheet(datos) {
-  const hoja = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
-  const fila = CAMPOS.map(campo => datos[campo] || '');
-  hoja.appendRow(fila);
+  // Candado: si dos solicitudes llegan al mismo tiempo, la segunda espera a que la
+  // primera termine de escribir su fila, en vez de arriesgarse a que se pisen entre sí.
+  const candado = LockService.getScriptLock();
+  candado.waitLock(30000); // espera hasta 30 segundos si otra ejecución está escribiendo
+  try {
+    const hoja = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
+    const fila = CAMPOS.map(campo => datos[campo] || '');
+    hoja.appendRow(fila);
+  } finally {
+    candado.releaseLock();
+  }
 }
 
 // ====================== GENERACIÓN DE PDF ======================
