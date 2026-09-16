@@ -1,0 +1,48 @@
+FICHA RESUMEN DE EVENTO
+Oficina de Eventos y Viajes — PUCP
+
+Fecha de registro: {{fecha_registro}}
+
+
+DATOS DEL SOLICITANTE
+
+Unidad solicitante: {{unidad_solicitante}}
+Evento solicitado por: {{evento_solicitado_por}}
+Coordinador: {{nombre_coordinador}}
+Celular del coordinador: {{celular_coordinador}}
+Correo del coordinador: {{correo_coordinador}}
+
+
+DATOS DEL EVENTO
+
+Nombre del evento: {{nombre_evento}}
+Tipo de evento: {{tipo_evento}}
+Fecha del evento: {{fecha_evento}}
+Horario: {{horario}}
+Descripción: {{descripcion}}
+
+
+ALCANCE Y PÚBLICO
+
+Público objetivo: {{publico_objetivo}}
+N.° de invitados esperados: {{num_invitados}}
+
+
+ESPACIO
+
+Espacio propuesto: {{espacio}}
+Notas del espacio: {{notas_espacio}}
+
+
+REQUERIMIENTOS
+
+{{requerimientos}}
+
+
+OBSERVACIONES
+
+{{observaciones}}
+
+
+---
+Este documento se generó automáticamente a partir de la Bitácora de Eventos de la Oficina de Eventos y Viajes (OEyV) — PUCP.
